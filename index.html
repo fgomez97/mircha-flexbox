@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo Flexbox</title>
+    <style>
+*, *:before, *:after {
+  box-sizing:border-box;
+}
+    .container{
+    background-color: #333;
+height: 30vh;
+    display:flex;
+    flex-direction:column;
+      /*row|row-reverse| column|column-reverse*/
+    flex-wrap: wrap-reverse;
+    /*nowrap|wrap|wrap-reverse*/
+    flex-flow:row nowrap;
+    justify-content:flex-start;
+    /*es un shorthand de  flex-direction and flex-wrap*/
+  justify-content: flex-start;   /*flex-start|center|flex-end|space-between|space-around|space-evenly*/
+  /*Define la alineacion de los elementos hijos, respecto del eje principal (main axia)*/   
+align-items:flex-end;
+/*Defone la alineacion de los hijos en el eje transversal(cross axis),dentro de cada linea */
+
+}
+    .item{
+        border: medium solid #999;
+          /*width: 20%;  
+        height: 20%;*/
+    background-color: #666;
+    }
+    .item:nth-child(2){
+        font-size: 250%;
+
+    }
+    </style>
+</head>
+<body>
+<section class="container">
+<article class="item">Flex item 1</article>
+<article class="item">Flex item 2</article>
+<article class="item">Flex item 3</article>
+</section>
+<br> 
+<section class="container">
+<article class="item">Flex item 1</article>
+<article class="item">Flex item 2</article>
+<article class="item">Flex item 3</article>
+</section>
+<br><br><section class="container">
+<article class="item">item 1</article>
+<article class="item">item 2</article>
+<article class="item">item 3</article>
+<article class="item">item 4</article>
+<article class="item">item 5</article>
+<article class="item">item 6</article>
+<article class="item">item 7</article>
+<article class="item">item 8</article>
+<article class="item">item 9</article>
+<article class="item">item 10</article>
+<article class="item">item 11</article>
+<article class="item">item 12</article>
+<article class="item">item 13</article>
+<article class="item">item 14</article>
+<article class="item">item 15</article>
+<article class="item">item 16</article>
+<article class="item">item 17</article>
+<article class="item">item 18</article>
+<article class="item">item 19</article>
+     </section>
+</body>
+</html>
